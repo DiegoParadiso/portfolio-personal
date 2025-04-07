@@ -3,7 +3,6 @@ import Section from "./section.astro"
 import { basics } from '../cv.json'
 const { summary } = basics
 ---
-
 <Section title="About">
     <p id="unique-paragraph">
         {summary}
@@ -11,12 +10,30 @@ const { summary } = basics
 </Section>
 
 <style>
-
-    p{
-        font-family:monospace
+    /* Estilos para el párrafo */
+    p {
+        font-family: monospace;
+        margin: 0;
+        line-height: 1.5;
     }
 
-    #unique-paragraph{
-        font-size: 0.9rem
+    #unique-paragraph {
+        font-size: 0.9rem;
+    }
+
+    /* Media Queries para Pantallas Pequeñas */
+    @media (max-width: 768px) {
+        /* Reducir el tamaño de la fuente en pantallas medianas y pequeñas */
+        #unique-paragraph {
+            font-size: 0.85rem;
+        }
+    }
+
+    /* Media Queries para Pantallas Extra Pequeñas (Móviles) */
+    @media (max-width: 480px) {
+        /* Reducir aún más el tamaño de la fuente en pantallas muy pequeñas */
+        #unique-paragraph {
+            font-size: 0.8rem;
+        }
     }
 </style>

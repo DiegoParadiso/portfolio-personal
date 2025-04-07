@@ -90,62 +90,70 @@
       "url": "https://publication.com",
       "summary": "Description…"
     }],
-    "skills": [{
-      "name": "HTML",
-      "keywords": [
-        "Web Dev",
-        "FrontEnd"
-      ]
-    },
-    {
-      "name": "CSS",
-      "keywords": [
-        "Web Dev",
-        "FrontEnd",
-        "Responsive Design"
-      ]
-    },
-    {
-      "name": "JavaScript",
-      "keywords": [
-        "Web Dev",
-        "FrontEnd",
-        "Responsive Design",
-        "FullStack"
-      ]
-    },
-    {
-      "name": "GIT/GitHub",
-      "keywords": [
-        "Versions Control",
-        "Collaboration",
-        "Code Source"
-      ]
-    },
-    {
-      "name": "TypeScript",
-      "keywords": [
-        "Web Dev",
-        "FrontEnd",
-        "Responsive Design",
-        "FullStack"
-      ]
-    },
-    {
-      "name": "C",
-      "keywords": [
-        "Systems",
-        "SO/HardWare",
-        "FullStack"
-      ]
-    },
-    {
-      "name": "C#",
-      "keywords": [
-        "Apps",
-        ".net"
-      ]
-    }
+"skills": [
+  {
+    "name": "HTML",
+    "keywords": [
+      "Web Development",
+      "Frontend"
+    ]
+  },
+  {
+    "name": "CSS",
+    "keywords": [
+      "Web Development",
+      "Frontend",
+      "Responsive Design"
+    ]
+  },
+  {
+    "name": "JavaScript",
+    "keywords": [
+      "Web Development",
+      "Frontend",
+      "Responsive Design",
+      "Fullstack"
+    ]
+  },
+  {
+    "name": "Git/GitHub",
+    "keywords": [
+      "Version Control",
+      "Collaboration",
+      "Source Code Management"
+    ]
+  },
+  {
+    "name": "TypeScript",
+    "keywords": [
+      "Web Development",
+      "Frontend",
+      "Fullstack"
+    ]
+  },
+  {
+    "name": "C",
+    "keywords": [
+      "Systems Programming",
+      "Operating Systems",
+      "Fullstack"
+    ]
+  },
+  {
+    "name": "C#",
+    "keywords": [
+      "Applications",
+      ".NET"
+    ]
+  },
+  {
+    "name": "React",
+    "keywords": [
+      "Web Applications",
+      "Frontend",
+      "JavaScript"
+    ]
+  }
   
     ],
     "languages": [{

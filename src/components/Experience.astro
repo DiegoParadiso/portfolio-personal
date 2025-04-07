@@ -1,9 +1,7 @@
 ---
-
 import Section from "./section.astro"
 import { work } from '../cv.json'
 ---
-
 <Section title="Experience">
     <ul>
         {
@@ -33,38 +31,96 @@ import { work } from '../cv.json'
 </Section>
 
 <style>
-    ul{
+    /* Diseño para la lista de trabajos */
+    ul {
         display: flex;
         flex-direction: column;
         gap: 32px;
+        padding: 0;
     }
 
-    article h3{
+    li {
+        list-style-type: none;
+    }
+
+    article h3 {
         font-weight: 500;
         color: #111;
+        font-size: 1.2rem;
     }
 
-    article h4{
-        font-family:monospace;
+    article h4 {
+        font-family: monospace;
         font-size: 0.9rem;
         font-weight: 400;
         color: #222;
         margin-top: 4px;
     }
 
-    header{
+    header {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        margin-bottom: 4px;
+        margin-bottom: 8px;
     }
 
-#unique-paragraph{
-    font-size: 0.9rem
-}
-
-    time{
+    time {
         color: #555;
-        font-size: .85rem;
+        font-size: 0.85rem;
+    }
+
+    footer {
+        margin-top: 8px;
+        color: #666;
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    /* Media Queries para Pantallas Pequeñas */
+    @media (max-width: 768px) {
+        /* Estilo para pantallas medianas y pequeñas */
+        ul {
+            gap: 24px; /* Menor espacio entre los elementos */
+        }
+
+        article h3 {
+            font-size: 1rem; /* Reducir tamaño de título principal */
+        }
+
+        article h4 {
+            font-size: 0.8rem; /* Reducir tamaño de subtítulo */
+        }
+
+        time {
+            font-size: 0.8rem; /* Reducir tamaño de tiempo */
+        }
+
+        footer {
+            font-size: 0.8rem; /* Reducir tamaño del resumen */
+        }
+    }
+
+    /* Media Queries para Pantallas Extra Pequeñas (Móviles) */
+    @media (max-width: 480px) {
+        /* Estilo para pantallas más pequeñas */
+        ul {
+            gap: 16px; /* Muy poco espacio entre los elementos */
+        }
+
+        article h3 {
+            font-size: 0.9rem; /* Reducir aún más el tamaño del título principal */
+        }
+
+        article h4 {
+            font-size: 0.75rem; /* Reducir el tamaño del subtítulo */
+        }
+
+        time {
+            font-size: 0.75rem; /* Reducir el tamaño del tiempo */
+        }
+
+        footer {
+            font-size: 0.75rem; /* Reducir el tamaño del resumen */
+        }
     }
 </style>

@@ -47,7 +47,7 @@ const profilesInfo = profiles.map(({network, url}) => {
 ---
 
 
-<footer>
+<footer class="no-print">
     Press <kbd>Ctrl</kbd> + <kbd>K</kbd> to open the command menu
 </footer>
 
@@ -130,5 +130,10 @@ const profilesInfo = profiles.map(({network, url}) => {
             opacity: 1;
         }
     }
-
+    /* Hacer que el footer se oculte en pantallas pequeñas */
+    @media (max-width: 768px) {
+        footer {
+            display: none;
+        }
+    }
 </style>
