@@ -1,0 +1,32 @@
+---	
+import Layout from '../layouts/Layout.astro';
+import Hero from "../components/Hero.astro";
+import About from '../components/About.astro';
+import Experience from '../components/Experience.astro';
+import Skills from '../components/Skills.astro';
+import Education from '../components/Education.astro';
+import KeyboardManager from '../components/KeyboardManager.astro'
+import {basics} from '../cv.json';
+
+const {name} = basics
+---
+
+<Layout title=`Portfolio of ${name}`>
+	<main>
+		<Hero />
+		<About />
+		<Experience />
+		<Education />
+		<Skills />
+	</main>
+	<KeyboardManager />
+</Layout>
+
+<style>
+	main {
+		padding: 4rem;
+		margin: auto;
+		width: 100%;
+
+	}
+</style>

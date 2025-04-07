@@ -1,0 +1,176 @@
+{
+    "basics": {
+      "name": "Diego González",
+      "label": "Computing Technician and efficient code developer. Student of Systems Degree.",
+      "image": "https://avatars.githubusercontent.com/u/105770016?v=4",
+      "email": "diego.gonzaaleez.a@gmail.com",
+      "phone": "+54 9 376-4820986",
+      "url": "https://johndoe.com",
+      "summary": "+3 years programming in different languages ​​and contributing in various environments of computing. Graduated as a Computer Technician. Currently, I'm studying a Bachelor's Degree in Information Systems.",
+      "location": {
+        "address": "Lavalle 1850",
+        "postalCode": "N3300",
+        "city": "Posadas",
+        "countryCode": "ARG",
+        "region": "Misiones"
+      },
+      "profiles": [{
+        "network": "Linkedin",
+        "username": "Diego González",
+        "url": "https://www.linkedin.com/in/diego-gonzalez-513013226/"
+      },
+      {
+        "network": "GitHub",
+        "username": "Diego Paradiso",
+        "url": "https://github.com/DiegoParadiso"
+      },
+      {
+        "network": "Substrack",
+        "username": "Diego González",
+        "url": "https://diegoparadiso.substack.com/"
+      }
+    ]
+    },
+    "work": [{
+      "name": "Escuela de Robótica de Misiones",
+      "position": "Facilitador",
+      "url": "https://company.com",
+      "startDate": "2022-03",
+      "endDate": "2022-09",
+      "summary": "Development and implementation of robotics projects that have been used in applications and in the real world.",
+      "highlights": [
+        "Started the company"
+      ]
+    }],
+    "volunteer": [{
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    }],
+    "education": [{
+      "institution": "UNaM - FCEQyN",
+      "isActive": true,
+      "url": "https://www.fceqyn.unam.edu.ar/",
+      "area": "Computer Systems Analyst, Bachelor Degree of Information Systems",
+      "studyType": "Bachelor Degree",
+      "startDate": "2023-03-02"
+    },
+    {
+      "institution": "E.P.E.T. N°1 UNESCO",
+      "url": "https://www.epet1.edu.ar/",
+      "area": "Computing Technician",
+      "studyType": "High School",
+      "startDate": "2017-03-02",
+      "endDate": "2022-12-12"
+    }
+  ],
+    
+    "awards": [{
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }],
+    "certificates": [{
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }],
+    "publications": [{
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }],
+    "skills": [{
+      "name": "HTML",
+      "keywords": [
+        "Web Dev",
+        "FrontEnd"
+      ]
+    },
+    {
+      "name": "CSS",
+      "keywords": [
+        "Web Dev",
+        "FrontEnd",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "keywords": [
+        "Web Dev",
+        "FrontEnd",
+        "Responsive Design",
+        "FullStack"
+      ]
+    },
+    {
+      "name": "GIT/GitHub",
+      "keywords": [
+        "Versions Control",
+        "Collaboration",
+        "Code Source"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "keywords": [
+        "Web Dev",
+        "FrontEnd",
+        "Responsive Design",
+        "FullStack"
+      ]
+    },
+    {
+      "name": "C",
+      "keywords": [
+        "Systems",
+        "SO/HardWare",
+        "FullStack"
+      ]
+    },
+    {
+      "name": "C#",
+      "keywords": [
+        "Apps",
+        ".net"
+      ]
+    }
+  
+    ],
+    "languages": [{
+      "language": "English",
+      "fluency": "Native speaker"
+    }],
+    "interests": [{
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }],
+    "references": [{
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }],
+    "projects": [{
+      "name": "Project",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "url": "https://project.com/"
+    }]
+  }

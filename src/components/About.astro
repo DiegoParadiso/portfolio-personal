@@ -1,0 +1,22 @@
+---
+import Section from "./section.astro"
+import { basics } from '../cv.json'
+const { summary } = basics
+---
+
+<Section title="About">
+    <p id="unique-paragraph">
+        {summary}
+    </p>
+</Section>
+
+<style>
+
+    p{
+        font-family:monospace
+    }
+
+    #unique-paragraph{
+        font-size: 0.9rem
+    }
+</style>
