@@ -6,6 +6,7 @@ import Experience from '../components/Experience.astro';
 import Skills from '../components/Skills.astro';
 import Education from '../components/Education.astro';
 import KeyboardManager from '../components/KeyboardManager.astro'
+import Projects from '../components/Projects.astro'
 import {basics} from '../cv.json';
 
 const {name} = basics
@@ -15,8 +16,9 @@ const {name} = basics
 	<main>
 		<Hero />
 		<About />
-		<Experience />
+		<Projects />
 		<Education />
+		<Experience />
 		<Skills />
 	</main>
 	<KeyboardManager />

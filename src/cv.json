@@ -172,13 +172,36 @@
       "reference": "Reference…"
     }],
     "projects": [{
-      "name": "Project",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
+      "name": "Minimal Ecommerce",
+      "isActive": true,
+      "startDate": "2025-03-28",
+      "endDate": "2025-06-01",
+      "description": "A ecommerce website for a local store.",
       "highlights": [
-        "Won award at AIHacks 2016"
+        "Catalog",
+        "Minimal interface",
+        "Responsive design"
       ],
+      
+      "url": "https://nofiguro.netlify.app/"
+    },
+    {
+      "name": "Sustainable Refuge",
+      "description": "Logic for a modern bus stop with LoRa technology.",
+      "highlights": [
+        "Wireless Communication"
+      ],
+      
+      "url": "https://github.com/DiegoParadiso/PROJECT-sustainable-refuge"
+    },
+    {
+      "name": "CRUD with Blazor",      
+      "description": "Create, Read, Update and Delete operations on a list of products. ",
+      "highlights": [
+        "Minimal interface"
+      ],
+      
       "url": "https://project.com/"
-    }]
+    }
+  ]
   }
