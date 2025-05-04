@@ -6,7 +6,7 @@
       "email": "diego.gonzaaleez.a@gmail.com",
       "phone": "+54 9 376-4820986",
       "url": "https://johndoe.com",
-      "summary": "+3 years programming in different languages ​​and contributing in various environments of computing. Graduated as a Computer Technician. Currently, I'm studying a Bachelor's Degree in Information Systems.",
+      "summary": "+4 years programming in different languages ​​and contributing in various environments of computing. Graduated as a Computer Technician. Currently, I'm studying a Bachelor's Degree in Information Systems. Programming Style: Minimalist, DRY, focused on clean and maintainable code.",
       "location": {
         "address": "Lavalle 1850",
         "postalCode": "N3300",
@@ -172,11 +172,24 @@
       "reference": "Reference…"
     }],
     "projects": [{
+      "name": "Structurize It",
+      "isActive": true,
+      "startDate": "2025-03-28",
+      "endDate": "2025-06-01",
+      "description": "Interactive React game to practice data structures daily with drag-and-drop challenges.",
+      "highlights": [
+        "Daily",
+        "Games",
+        "Responsive design"
+      ],
+      
+      "url": "https://structurize-it.vercel.app"
+    },{
       "name": "Minimal Ecommerce",
       "isActive": true,
       "startDate": "2025-03-28",
       "endDate": "2025-06-01",
-      "description": "A ecommerce website for a local store.",
+      "description": "Minimalist e-commerce app for a thrift shop with admin tools to manage products, orders, and users.",
       "highlights": [
         "Catalog",
         "Minimal interface",
