@@ -1,15 +1,14 @@
 ---
-// components/AnimatedText.astro
 const { text = "" } = Astro.props;
 const words = text.split(" ");
 ---
 
 <span class="animated-text">
   {
-    words.map((word, i) => (
-      <span class="word" key={i}>
-        {word.split("").map((letter, j) => (
-          <span class="letter" key={j}>
+    words.map((word: string, i: number) => (
+      <span class="word">
+        {word.split("").map((letter: string, j: number) => (
+          <span class="letter">
             {letter}
           </span>
         ))}
@@ -32,19 +31,17 @@ const words = text.split(" ");
   
   .letter {
     display: inline-block;
-    color: #777;  /* Gris claro */
+    color: #777;
     opacity: 0.9;
     transition: opacity 0.25s ease;
     position: relative;
   }
-  
-  /* Hover: leve realce */
+
   .word:hover .letter {
-    color: #555; /* Gris un poco más oscuro al hacer hover */
+    color: #555;
     opacity: 1;
   }
-  
-  /* Subrayado más sutil */
+
   .word:hover .letter::after {
     content: "";
     position: absolute;
@@ -57,9 +54,8 @@ const words = text.split(" ");
     transform-origin: left;
     transition: transform 0.3s ease;
   }
-  
+
   .word:hover .letter:hover::after {
     transform: scaleX(1);
   }
 </style>
-
