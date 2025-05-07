@@ -9,7 +9,7 @@ const words = text.split(" ");
     words.map((word, i) => (
       <span class="word" key={i}>
         {word.split("").map((letter, j) => (
-          <span class={`letter ${['i', 'j', 'o'].includes(letter) ? 'no-flip' : ''}`} key={j}>
+          <span class="letter" key={j}>
             {letter}
           </span>
         ))}
@@ -32,20 +32,20 @@ const words = text.split(" ");
   
   .letter {
     display: inline-block;
-    color: #222;
+    color: #777;  /* Gris claro */
     opacity: 0.9;
-    transition: color 0.25s ease, opacity 0.25s ease;
+    transition: opacity 0.25s ease;
     position: relative;
   }
   
   /* Hover: leve realce */
-  .word:hover .letter:not(.no-flip) {
-    color: #000;
+  .word:hover .letter {
+    color: #555; /* Gris un poco más oscuro al hacer hover */
     opacity: 1;
   }
   
   /* Subrayado más sutil */
-  .word:hover .letter:not(.no-flip)::after {
+  .word:hover .letter::after {
     content: "";
     position: absolute;
     left: 0;
@@ -58,7 +58,8 @@ const words = text.split(" ");
     transition: transform 0.3s ease;
   }
   
-  .word:hover .letter:not(.no-flip):hover::after {
+  .word:hover .letter:hover::after {
     transform: scaleX(1);
   }
-  </style>
+</style>
+
