@@ -1,6 +1,6 @@
 ---
 import Section from "./section.astro";
-
+import AnimatedText from "./AnimatedText.astro"
 import { projects } from "../cv.json"
 ---
 
@@ -18,7 +18,9 @@ import { projects } from "../cv.json"
                             </a>
                             {isActive && <span>&bull;</span>} 
                             </h3>
-                            <p>{description}</p>
+                            <div id="unique-paragraph" class="paragraph-style">
+                                <AnimatedText text={description} />
+                            </div>
                         </header>
                     </article>
                 </li>
@@ -46,6 +48,14 @@ import { projects } from "../cv.json"
         padding: 16px;
         height: 100%;
     }
+    .paragraph-style {
+		color: #888;
+		font-size: 0.86rem;
+		line-height: 1.5;
+		margin: 0;
+		text-wrap: pretty;
+        font-family: monospace;
+  }
 
     article header{
         flex:1;

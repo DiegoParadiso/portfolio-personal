@@ -1,21 +1,25 @@
 ---
 import Section from "./section.astro"
 import { basics } from '../cv.json'
+import AnimatedText from "./AnimatedText.astro"
 const { summary } = basics
 ---
 <Section title="About">
-    <p id="unique-paragraph">
-        {summary}
-    </p>
+    <div id="unique-paragraph" class="paragraph-style">
+        <AnimatedText text={summary} />
+      </div>
 </Section>
 
 <style>
     /* Estilos para el párrafo */
-    p {
+    .paragraph-style {
+		color: #888;
+		font-size: 0.8rem;
+		line-height: 1.5;
+		margin: 0;
+		text-wrap: pretty;
         font-family: monospace;
-        margin: 0;
-        line-height: 1.5;
-    }
+  }
 
     #unique-paragraph {
         font-size: 0.9rem;

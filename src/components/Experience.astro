@@ -1,6 +1,7 @@
 ---
 import Section from "./section.astro"
 import { work } from '../cv.json'
+import AnimatedText from "./AnimatedText.astro"
 ---
 <Section title="Experience">
     <ul>
@@ -20,7 +21,9 @@ import { work } from '../cv.json'
                             <time>{years}</time>
                         </header>
                         <footer>
-                            <p>{summary}</p>
+                            <div id="unique-paragraph" class="paragraph-style">
+                                <AnimatedText text={summary} />
+                            </div>                           
                         </footer>
                     </article>
                 </li>
@@ -56,7 +59,14 @@ import { work } from '../cv.json'
         color: #222;
         margin-top: 4px;
     }
-
+    .paragraph-style {
+		color: #888;
+		font-size: 0.9rem;
+		line-height: 1.5;
+		margin: 0;
+		text-wrap: pretty;
+        font-family: monospace;
+  }
     header {
         display: flex;
         justify-content: space-between;

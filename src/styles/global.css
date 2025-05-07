@@ -1,0 +1,12 @@
+
+
+.flip-text {
+    display: inline-block;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  
+  .flip-text:hover {
+    transform: rotateY(180deg);
+  }

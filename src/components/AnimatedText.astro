@@ -1,0 +1,64 @@
+---
+// components/AnimatedText.astro
+const { text = "" } = Astro.props;
+const words = text.split(" ");
+---
+
+<span class="animated-text">
+  {
+    words.map((word, i) => (
+      <span class="word" key={i}>
+        {word.split("").map((letter, j) => (
+          <span class={`letter ${['i', 'j', 'o'].includes(letter) ? 'no-flip' : ''}`} key={j}>
+            {letter}
+          </span>
+        ))}
+      </span>
+    ))
+  }
+</span>
+
+<style is:global>
+  .animated-text {
+    display: inline;
+  }
+  
+  .word {
+    display: inline-block;
+    margin-right: 0.35em;
+    cursor: default;
+    position: relative;
+  }
+  
+  .letter {
+    display: inline-block;
+    color: #222;
+    opacity: 0.9;
+    transition: color 0.25s ease, opacity 0.25s ease;
+    position: relative;
+  }
+  
+  /* Hover: leve realce */
+  .word:hover .letter:not(.no-flip) {
+    color: #000;
+    opacity: 1;
+  }
+  
+  /* Subrayado más sutil */
+  .word:hover .letter:not(.no-flip)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 0.5px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .word:hover .letter:not(.no-flip):hover::after {
+    transform: scaleX(1);
+  }
+  </style>
