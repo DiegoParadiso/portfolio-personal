@@ -1,0 +1,61 @@
+---
+const { toggleTheme } = Astro.props;
+---
+
+<button
+  id="theme-toggle"
+  title="Alternar posición"
+  class="w-10 h-5 rounded-full flex items-center justify-start p-1 transition-all duration-300 bg-neutral-300 dark:bg-neutral-700"
+  onclick="togglePosition()"
+>
+  <div class="circle w-4 h-4 bg-white dark:bg-black rounded-full"></div>
+</button>
+
+<script is:inline>
+window.addEventListener('DOMContentLoaded', () => {
+  const circle = document.querySelector('#theme-toggle .circle');
+  let toggled = false; // Estado interno para alternar posiciones
+
+  window.togglePosition = () => {
+    toggled = !toggled;
+    circle.style.transform = toggled ? 'translateX(18px)' : 'translateX(0px)';
+  };
+});
+</script>
+
+<style>
+/* Tema claro: bola a la izquierda */
+[data-theme='light'] {
+  --toggle-position: 0px;
+}
+
+/* Tema oscuro: bola a la derecha */
+[data-theme='dark'] {
+  --toggle-position: 18px;
+}
+
+.circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  transition: transform 0.3s ease-in-out;
+}
+
+#theme-toggle {
+  width: 40px;
+  height: 20px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Ajuste del fondo según el tema */
+#theme-toggle {
+  background-color: var(--border-color);
+}
+</style>

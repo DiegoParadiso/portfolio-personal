@@ -1,12 +1,10 @@
 
-
-.flip-text {
-    display: inline-block;
-    transition: transform 0.6s ease;
-    transform-style: preserve-3d;
-    perspective: 1000px;
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
   }
   
-  .flip-text:hover {
-    transform: rotateY(180deg);
+  .dark {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
   }

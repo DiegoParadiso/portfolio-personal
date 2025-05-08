@@ -7,7 +7,7 @@ import { projects } from "../cv.json"
 <Section title="Projects">
     <ul>
         {
-            projects.map(({ url, description, highlights, name, isActive }) => {
+            projects.map (({ url, description, highlights, name, isActive }) => {
                 return (
                 <li>
                     <article>
@@ -37,20 +37,24 @@ import { projects } from "../cv.json"
         display:grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 1rem;
+        padding: 0;
     }
 
-    article{
+    article {
         border-radius: 8px;
-        border: 1px solid #f2f2f2;
+        border: 1px solid var(--border-color);
+        background-color: var(--card-bg);
         display: flex;
         gap: 16px;
         flex-direction: column;
         padding: 16px;
         height: 100%;
+        transition: background-color 0.3s, border-color 0.3s;
     }
+
     .paragraph-style {
-		color: #888;
-		font-size: 0.86rem;
+        color: var(--text-color);		
+        font-size: 0.86rem;
 		line-height: 1.5;
 		margin: 0;
 		text-wrap: pretty;
@@ -65,8 +69,9 @@ import { projects } from "../cv.json"
         margin-bottom: 4px;
     }
 
-    article a{
-        color: #111;
+    article a {
+        color: var(--text-color);
+        transition: color 0.2s;
     }
 
     article a:hover{

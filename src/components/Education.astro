@@ -47,14 +47,15 @@ import AnimatedText from "./AnimatedText.astro"
 
     article h3 {
         font-weight: 500;
-        color: #111;
+        color: var(--text-color);
+        font-size: 1.1rem;
     }
 
     article h4 {
         font-family: monospace;
         font-size: 0.9rem;
         font-weight: 400;
-        color: #222;
+        color: var(--text-color);
         margin-top: 4px;
     }
 
@@ -63,22 +64,27 @@ import AnimatedText from "./AnimatedText.astro"
         justify-content: space-between;
         align-items: baseline;
         margin-bottom: 4px;
+        flex-wrap: wrap;
     }
 
     time {
-        color: #555;
+        color: var(--text-color);
         font-size: 0.85rem;
+        opacity: 0.7;
     }
 
     h3 a {
         color: rgb(0, 255, 64);
+        margin-left: 0.5rem;
+        font-size: 1rem;
     }
 
     footer p {
         font-size: 0.9rem;
     }
+    
     .paragraph-style {
-		color: #888;
+        color: var(--text-color);
 		font-size: 0.9rem;
 		line-height: 1.5;
 		margin: 0;

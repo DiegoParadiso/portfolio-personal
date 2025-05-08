@@ -8,6 +8,8 @@ import Linkedin from "../Icons/Linkedin.astro";
 import World from "../Icons/World.astro";
 import Substrack from "../Icons/Substrack.astro";
 import AnimatedText from "./AnimatedText.astro"; 
+import ThemeToggle from "../components/ThemeToggle.astro";
+
 
 const { name, label, image, location, profiles, phone, email } = basics;
 const { region, countryCode } = location;
@@ -22,14 +24,15 @@ const linkedInfo = profiles.find(({ network }) => network == "LinkedIn");
 const linkedUrl = linkedInfo?.url;
 
 const printInfo = [email, phone, linkedUrl].filter(Boolean).join(', ');
----
+--- 
 
 <Section>
   <div class="container">
     <figure class="image-container">
       <img src={image} alt={name} />
     </figure>
-    <div class="info">
+    <div class="info">      <ThemeToggle />
+
       <h1>{name}</h1>
       <div id="unique-paragraph" class="paragraph-style">
         <AnimatedText text={label} />
@@ -73,164 +76,158 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(', ');
             >
               <Icon />
             </a>
-          );
-        })}
+          ); 
+        })} 
       </footer>
-    </div>
-  </div>    
+    </div> 
+  </div>     
 </Section>
-
 <style>
 .container {
   display: flex;
-  flex-direction: row-reverse; /* Imagen a la derecha */
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: flex-start;
-  gap: 16px;
+  gap: 24px; /* Espaciado más uniforme */
 }
 
-  .info {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    flex-grow: 1;
-  }
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-grow: 1;
+}
 
-  .location {
-    color: #666;
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    font-size: 0.85rem;
-    letter-spacing: -0.05rem;
-  }
+.location {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  letter-spacing: -0.05rem;
+}
 
-  img {
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    max-width: 100%;
-    width: 130px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    margin-right: 16px; /* Margen a la derecha para separarla de los íconos */
-  }
+img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  max-width: 100%;
+  width: 150px;
+  flex-shrink: 0;
+  border-radius: 16px;
+}
 
-  footer {
-    color: #666;
-    font-size: 0.85rem;
-    display: flex;
-    gap: 4px;
-    margin-top: 4px;
-    letter-spacing: -0.05rem;
-    flex-wrap: wrap;
-  }
-  h1 {
-    margin-bottom: 8px;
-        line-height: 1.5;
-        font-size: 1.2rem;
-        font-weight: 500;
-  }
+footer {
+  color: var(--text-color);
+  font-size: 0.85rem;
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
+  letter-spacing: -0.05rem;
+  flex-wrap: wrap;
+}
 
-  footer a {
-    color: #777;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #eee;
-    padding: 4px;
-    height: 32px;
-    width: 32px;
-    border-radius: 6px;
-    transition: all .3s ease;
-  }
+footer a {
+  color: var(--text-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+  padding: 4px;
+  height: 32px;
+  width: 32px;
+  border-radius: 6px;
+  transition: all .3s ease;
+}
 
-  footer a:hover {
-    background-color: #eee;
-    border: 1px solid #ddd;
-    color: #333;
-  }
+footer a:hover {
+  background-color: var(--code-bg);
+  color: var(--accent-color);
+}
 
-  .print {
+.print {
+  display: none !important;
+}
+
+@media print {
+  .no-print {
     display: none !important;
   }
 
-  @media print {
-    .no-print {
-      display: none !important;
-    }
+  .print {
+    display: block !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
   }
 
-  @media print {
-    .print {
-      display: block !important;
-    }
+  img {
+    width: 150px;
+    margin-right: 0;
   }
 
-  /* Media queries para pantallas pequeñas y medianas */
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      align-items: flex-start; /* Cambié de center a flex-start */
-      gap: 16px;
-    }
-
-    img {
-        width: 150px; 
-      margin-right: 0;
-    }
-
-    footer {
-      gap: 8px;
-      flex-direction: row; /* Los íconos siempre alineados horizontalmente */
-    }
-
-    footer a {
-      height: 28px;
-      width: 28px;
-      padding: 3px;
-    }
-
-    .image-container {
-      margin-top: 16px;
-    }
+  footer {
+    gap: 10px;
   }
 
-  @media (max-width: 480px) {
-    .container {
-      flex-direction: column;
-      align-items: flex-start; /* Cambié de center a flex-start */
-      gap: 8px;
-    }
-
-    img {
-        width: 150px; 
-    }
-
-    footer a {
-      height: 24px;
-      width: 24px;
-      padding: 2px;
-    }
-
-    footer {
-      flex-direction: row; /* Los íconos siempre alineados horizontalmente */
-      gap: 4px;
-    }
-
-    #unique-paragraph {
-      font-size: 0.8rem;
-    }
-
-    .image-container {
-      margin-top: 16px;
-    }
+  footer a {
+    height: 28px;
+    width: 28px;
+    padding: 3px;
   }
-  .paragraph-style {
-		color: #888;
-		font-size: .8rem;
-		line-height: 1.5;
-		margin: 0;
-		text-wrap: pretty;
-		font-family: Menlo, Monaco, Lucida Console, 'Courier New', Courier, monospace; /* Cambié la fuente a la misma que el título */
+
+  .image-container {
+    margin-top: 16px;
+    margin-bottom: 8px;
   }
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  img {
+    width: 150px;
+  }
+
+  footer a {
+    height: 24px;
+    width: 24px;
+    padding: 2px;
+  }
+
+  footer {
+    flex-direction: row;
+    gap: 6px;
+  }
+
+  #unique-paragraph {
+    font-size: 0.8rem;
+  }
+
+  .image-container {
+    margin-top: 16px;
+  }
+}
+h1 {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.paragraph-style {
+  color: var(--text-color);
+  font-size: .8rem;
+  line-height: 1.5;
+  margin: 0;
+  text-wrap: pretty;
+  font-family: Menlo, Monaco, Lucida Console, 'Courier New', Courier, monospace;
+}
 </style>
