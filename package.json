@@ -3,11 +3,11 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-  "dev": "astro dev",
-  "build": "astro check && astro build",
-  "build:github": "cross-env DEPLOY_ENV=github astro build && echo > dist/.nojekyll",
-  "deploy": "gh-pages -d dist"
-},
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "build:github": "cross-env DEPLOY_ENV=github astro build && echo > dist/.nojekyll",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "@astrojs/check": "^0.9.2",
     "@astrojs/tailwind": "^6.0.2",
