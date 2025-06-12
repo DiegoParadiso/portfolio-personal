@@ -5,7 +5,7 @@
   "scripts": {
   "dev": "astro dev",
   "build": "astro check && astro build",
-  "build:github": "cross-env DEPLOY_ENV=github astro build",
+  "build:github": "cross-env DEPLOY_ENV=github astro build && echo > dist/.nojekyll",
   "deploy": "gh-pages -d dist"
 },
   "dependencies": {
