@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro check && astro build",
-    "build:github": "DEPLOY_ENV=github astro build",
+    "build:github": "cross-env DEPLOY_ENV=github astro build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
@@ -17,6 +17,7 @@
     "typescript": "^5.5.4"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "gh-pages": "^6.3.0"
   }
 }
