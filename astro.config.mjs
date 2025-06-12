@@ -1,9 +1,9 @@
 import { defineConfig } from 'astro/config';
+import tailwind from '@astrojs/tailwind';
 
-import tailwind from "@astrojs/tailwind";
+const isGithubPages = process.env.DEPLOY_ENV === 'github';
 
-// https://astro.build/config
 export default defineConfig({
-    base: '/portfolio-personal/',
+  base: isGithubPages ? '/portfolio-personal/' : '/',
   integrations: [tailwind()]
 });
