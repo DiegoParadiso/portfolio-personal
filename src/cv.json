@@ -86,21 +86,6 @@
     }],
 "skills": [
   {
-    "name": "HTML",
-    "keywords": [
-      "Web Development",
-      "Frontend"
-    ]
-  },
-  {
-    "name": "CSS",
-    "keywords": [
-      "Web Development",
-      "Frontend",
-      "Responsive Design"
-    ]
-  },
-  {
     "name": "JavaScript",
     "keywords": [
       "Web Development",
@@ -109,12 +94,20 @@
       "Fullstack"
     ]
   },
-  {
-    "name": "Git/GitHub",
+    {
+    "name": "CSS",
     "keywords": [
-      "Version Control",
-      "Collaboration",
-      "Source Code Management"
+      "Web Development",
+      "Frontend",
+      "Responsive Design"
+    ]
+  },
+  {
+    "name": "React",
+    "keywords": [
+      "Web Applications",
+      "Frontend",
+      "JavaScript"
     ]
   },
   {
@@ -139,13 +132,21 @@
       "Applications",
       ".NET"
     ]
-  },
+  }
+  ,
   {
-    "name": "React",
+    "name": "Java",
     "keywords": [
-      "Web Applications",
-      "Frontend",
-      "JavaScript"
+      "Applications",
+      ".NET"
+    ]
+  }
+  ,{
+    "name": "Git/GitHub",
+    "keywords": [
+      "Version Control",
+      "Collaboration",
+      "Source Code Management"
     ]
   }
   
@@ -165,7 +166,18 @@
       "name": "Jane Doe",
       "reference": "Reference…"
     }],
-    "projects": [{
+    
+    "projects": [ 
+    {
+      "name": "Recurnote",    
+      "isActive": true,  
+      "description": "Dynamic reminders website with a drag-and-drop calendar, notes, tasks, and visual file management system.",
+      "highlights": [
+        "Minimal interface"
+      ],
+      
+      "url": "https://recurnote.vercel.app"
+    },{
       "name": "Structurize It",
       "isActive": true,
       "startDate": "2025-03-28",
@@ -178,16 +190,6 @@
       ],
       
       "url": "https://structurize-it.vercel.app"
-    },    
-    {
-      "name": "Recurnote",    
-      "isActive": true,  
-      "description": "Dynamic reminders website with a drag-and-drop calendar, notes, tasks, and visual file management system.",
-      "highlights": [
-        "Minimal interface"
-      ],
-      
-      "url": "https://recurnote.vercel.app"
     },
     {
       "name": "MERN Store",
