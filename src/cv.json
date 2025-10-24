@@ -85,72 +85,36 @@
       "summary": "Description…"
     }],
 "skills": [
-  {
-    "name": "JavaScript",
-    "keywords": [
-      "Web Development",
-      "Frontend",
-      "Responsive Design",
-      "Fullstack"
-    ]
-  },
-    {
-    "name": "CSS",
-    "keywords": [
-      "Web Development",
-      "Frontend",
-      "Responsive Design"
-    ]
-  },
-  {
-    "name": "React",
-    "keywords": [
-      "Web Applications",
-      "Frontend",
-      "JavaScript"
-    ]
-  },
-  {
-    "name": "TypeScript",
-    "keywords": [
-      "Web Development",
-      "Frontend",
-      "Fullstack"
-    ]
-  },
-  {
-    "name": "C",
-    "keywords": [
-      "Systems Programming",
-      "Operating Systems",
-      "Fullstack"
-    ]
-  },
-  {
-    "name": "C#",
-    "keywords": [
-      "Applications",
-      ".NET"
-    ]
-  }
-  ,
-  {
-    "name": "Java",
-    "keywords": [
-      "Applications",
-      ".NET"
-    ]
-  }
-  ,{
-    "name": "Git/GitHub",
-    "keywords": [
-      "Version Control",
-      "Collaboration",
-      "Source Code Management"
-    ]
-  }
-  
-    ],
+  { "name": "React" },
+  { "name": "TypeScript" },
+  { "name": "JavaScript (ES6+)" },
+  { "name": "Tailwind CSS" },
+  { "name": "Node.js" },
+  { "name": "Express.js" },
+  { "name": "C#" },
+  { "name": ".NET Framework" },
+  { "name": "ASP.NET Core" },
+  { "name": "Entity Framework" },
+  { "name": "PostgreSQL + MongoDB" },
+  { "name": "RESTful APIs" },
+  { "name": "JWT Authentication" },
+  { "name": "Git & GitHub" },
+  { "name": "Docker" },
+  { "name": "Postman" },
+  { "name": "Vite" },
+  { "name": "MongoDB / Neon" },
+  { "name": "CI/CD & Deployment" },
+  { "name": "SOLID Principles" },
+  { "name": "Clean Code" },
+  { "name": "Design Patterns" },
+  { "name": "MVC Architecture" },
+  { "name": "C" },
+  { "name": "Java" },
+  { "name": "Python" },
+  { "name": "Teamwork" },
+  { "name": "Communication" },
+  { "name": "Self-Learning" }
+],
     "languages": [{
       "language": "English",
       "fluency": "Native speaker"

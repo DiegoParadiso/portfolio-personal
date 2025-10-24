@@ -1,0 +1,18 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Dashboard from '../../components/Dashboard.astro';
+---
+
+<Layout title="Admin Dashboard">
+  <main class="admin-dashboard">
+    <Dashboard />
+  </main>
+</Layout>
+
+<style>
+  .admin-dashboard {
+    min-height: 100vh;
+    background: var(--bg-color);
+    padding: 2rem;
+  }
+</style>
